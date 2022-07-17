@@ -8,16 +8,16 @@ int main()
     switch (a)
     {
     case 1:
-        cout << "hello";
+        cout << "hello"<<endl;
         break;
     case 2:
-        cout << "maa ki chuu";
+        cout << "maa ki chuu"<<endl;
         break;
     case 3:
-        cout << "tu hi dev";
+        cout << "tu hi dev"<<endl;
         break;
     default:
-        cout << "Tum sahi sey likho badda";
+        cout << "Tum sahi sey likho badda"<<endl;
     }
     system("pause");
     return 0;
