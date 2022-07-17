@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     int a;
-    cout << "type your answer: ";
+    cout << "type your answer from 1, 2, 3 : ";
     cin >> a;
     switch (a)
     {
