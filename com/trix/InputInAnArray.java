@@ -1,3 +1,5 @@
+package com.trix;
+
 // Simple java program to take input of an array and print it as it is
 // Taking input using For Loop
 
