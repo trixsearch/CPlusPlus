@@ -1,4 +1,4 @@
-class Solution {
+class I1389CreateTargetArrayintheGivenOrder {
     public int[] createTargetArray(int[] nums, int[] index) {
       int len = nums.length;
       int[] arr = new int[len] ;
