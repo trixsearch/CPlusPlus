@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class I1389CreateTargetArrayintheGivenOrder {
     public int[] createTargetArray(int[] nums, int[] index) {
       int len = nums.length;

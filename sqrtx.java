@@ -1,4 +1,5 @@
 // Leetcode 69 sqrt(x)
+// not working right now
 public class sqrtx {
     public static void main(String[] args) {
         System.out.println(mySqrt(4));

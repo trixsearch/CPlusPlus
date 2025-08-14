@@ -1,4 +1,4 @@
-class Solution {
+class NumberOfGoodPairs {
     public int numIdenticalPairs(int[] nums) {
         int ans=0;
         int len = nums.length;
