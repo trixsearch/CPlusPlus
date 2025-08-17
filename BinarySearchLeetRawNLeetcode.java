@@ -10,6 +10,7 @@ public class BinarySearchLeetRawNLeetcode {
             // for finding mid element
 //            int mid= start+end/2; // This formula exceeds int range limits sometimes
             // we got new formula instead
+            // failing for the 2147395599
             int mid = start+((end - start) / 2);
             if(nums[mid]==target) return mid;
             if (nums[mid] > target) {
