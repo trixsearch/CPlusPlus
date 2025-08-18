@@ -3,21 +3,23 @@ public class BinarySearchLeetRawNLeetcode {
         int [] arr = {1,2,3,4,5,6,7};
         System.out.println(binary(arr,5));
     }
-    static int binary(int[]nums,int target){
-        int start=0;
-        int end = nums.length-1;
-        while(start<=end) {
-            // for finding mid element
-//            int mid= start+end/2; // This formula exceeds int range limits sometimes
-            // we got new formula instead
-            // failing for the 2147395599
-            int mid = start+((end - start) / 2);
-            if(nums[mid]==target) return mid;
-            if (nums[mid] > target) {
-                end = mid - 1;
-            } else if (nums[mid] < target) {
-                start = mid + 1;
+    static int binary(int[]nums,int x){
+        int start=1;
+        int end=x/2;
+        int ans=0;
+        if(x<2) return x;
+        while(start<=end){
+            int mid=start+((end-start)/2);
+            long sq = (long)mid*mid;
+            if(sq==x) return ans=mid;
+            else if(sq<x){
+                ans= mid;
+                start=mid+1;
             }
-        }return -1;
+            else if(sq>x){
+                end=mid-1;
+            }
+
+        }return ans;
     }
 }
