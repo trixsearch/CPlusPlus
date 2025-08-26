@@ -8,6 +8,7 @@ public class EvenOddSum {
             if(a%2==0){
                 evenSum=evenSum+a;
             }
+                
             else{
                 oddSum=oddSum+a;
             }
