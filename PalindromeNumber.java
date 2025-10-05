@@ -1,7 +1,7 @@
 // 9. leetcode palindrome number
 class PalindromeNumber{
 public static void main(String []args){
-System.out.print(isPalindrome(121))
+System.out.print(isPalindrome(121));
 }
 static boolean isPalindrome(int x) {
         boolean ans=false;

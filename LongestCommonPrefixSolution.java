@@ -3,7 +3,7 @@
 
 class LongestCommonPrefixSolution{
 public static void main(String[] args){
-  strs = {"flower","flow","flight"};
+ String[] strs = {"flower","flow","flight"};
   longestCommonPrefix(strs);
 }
   
