@@ -1,7 +1,7 @@
 // Leetcode 217. Contains Duplicate
+import java.util.HashMap;
 
-
-public Class ContainsDuplicateLeetCodeSolution{
+public class ContainsDuplicateLeetCodeSolution{
   public static void main(String[] args){
     int[] arr={1,2,3,4,5,1};
     System.out.print(containsDuplicate(arr));
