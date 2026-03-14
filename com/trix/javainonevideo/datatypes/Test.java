@@ -48,6 +48,13 @@ public class Test {
 
         // converting Int to long is widening conversion ,which can be done easily
         // vice versa doing narrowing conversion or explicit conversion will be data loss
+//        Primitive types are the most basic data types built into the language. They serve as the building blocks for data manipulation and represent single values.
+//
+//        Memory: They are stored directly on the Stack.
+//
+//                Default Values: They always have a value (e.g., int defaults to 0) and cannot be null.
+//
+//                Size: They have a fixed size regardless of the operating system.
 
 //        Non-primitive types are created by the programmer (except for String, which is predefined but still non-primitive). They refer to objects.
 //
@@ -67,5 +74,34 @@ public class Test {
 //
 //        Interfaces: Blueprints for classes.
         System.out.println("\nAbove All are PRIMITIVE Data types");
+
+        System.out.println("Non Primitive Data Types:");
+        System.out.println("String");
+        // String ko hum 2 prakar sey initiate kar sakte hai
+        // string literal k through
+        String stringLiteralUdahran = "Meri String";
+        // Using constructor
+        String stringConstructor = new String("Hello");
+//        When you use a String literal, Java does something special called String Interning.
+//        It stores the literal in a specific area of the Heap memory known as the String Constant Pool.
+//        String Literal: String s1 = "Java";
+//        Java checks the "Pool." If "Java" is already there, it just points s1 to it. If not, it creates it.
+//        New Keyword: String s2 = new String("Java");
+//        This forces Java to create a brand new object in the general Heap memory, even if "Java" already exists in the pool.
+
+
+        // JVM has two different spaces to store data
+        // int, double stores in stack , where as String saves in Heap (Inside String Constant Pool)
+
+        System.out.println("Strings :");
+
+        System.out.println("different Strings Methods");
+        String stringUdahran = "Ye Kuch bhi String Hai ";
+        System.out.println("String ki Length :"+stringUdahran.length());
+        System.out.println("String contains : "+ stringUdahran.contains("ring"));
+        System.out.println("String ChatAt : "+stringUdahran.charAt(4));
+        System.out.println("String Equals : "+ stringUdahran.equals("Kuch bhi or"));
+        System.out.println("EqualsIgnoreCase : "+ stringUdahran.equals("ye kuch bhi String hai"));
+
     }
 }
