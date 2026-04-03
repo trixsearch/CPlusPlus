@@ -7,7 +7,8 @@ public class Samosa {
 	// yaha humne ek Samosa type ka samosa variable banaya hai , jisko aage hum use karke check karsakte hai 
 	// ki object pahle sey created hai ya nhi 
 	// created field to storre object private
-	private static Samosa samosa;
+	private static volatile Samosa samosa;
+	// volatile keyword sey humare thread ka local cache memory na use hokar Main Ram ka memory use hoga
 	// Humko Ek private Constructor banana Padega
 	private Samosa() {
 		// class ka constructor
@@ -24,10 +25,13 @@ public class Samosa {
 			synchronized (Samosa.class) {
 				if(samosa==null) {
 					samosa = new Samosa();
+					return samosa;
 			}
+		}
 		}
 		return samosa;
 	}
 	// humne isko SingletonExampl m use kiya hai 
 	// isko hum kahte hai Lazy way of creating Singleton Object
 }
+
